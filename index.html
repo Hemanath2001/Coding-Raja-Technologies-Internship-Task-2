@@ -1,0 +1,43 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="player-container">
+        <h2>NOW PLAYING</h2>
+        <div id="now-playing">
+            <img id="current-cover" src="trackcover1.png" alt="Current Song Cover">
+            <div id="current-details">
+                <p id="current-title">Song Title</p>
+                <p id="current-artist">Artist Name</p>
+            </div>
+        </div>
+        <audio id="audio" controls></audio>
+        <div id="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="playBtn">Play</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <div id="progress-container">
+            <!-- <div id="progress-bar">
+                <div id="progress"></div>
+            </div> -->
+        </div>
+        <button id="libraryBtn">Library</button>
+    </div>
+    <div id="library-popup">
+        <h2>LIBRARY</h2>
+        <button id="shuffleBtn">Shuffle</button>
+        <button id="backBtn">Back</button>
+        <ul id="library"></ul>
+        <ul id="playlist"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
